@@ -1,0 +1,62 @@
+.common {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-direction: column;
+
+  &__greeting {
+    margin: 0 auto 20px;
+    font-weight: 900;
+    font-size: $big-font;
+    text-transform: uppercase;
+    color: $common-font-color;
+  }
+
+  &__btn {
+    margin: auto;
+    padding: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: $normal-font;
+    border: 1px solid $common-font-color;
+    color: $common-font-color;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $common-font-color;
+      color: $common-bg-color;
+    }
+  }
+
+  &__img-box {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 710px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__anchor {
+    display: inline-block;
+    margin: 20px auto 0;
+    padding: 10px;
+    font-size: $normal-font;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 1px solid $common-font-color;
+    color: $common-font-color;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $common-font-color;
+      color: $common-bg-color;
+    }
+  }
+}

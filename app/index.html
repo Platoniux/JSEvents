@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>MA Events</title>
+</head>
+<body>
+  <header class="head-panel">
+    <div class="head-panel__burger-container">
+      <svg 
+      class="head-panel__svg js-svg" 
+      viewBox="0 0 70 70" 
+      width="70" 
+      height="70">
+        <rect 
+        class="head-panel__rect js-rect-lft" 
+        width="70"
+        height="10"
+        fill="#41b3a3"
+        y="10"
+        rx="5"
+        ry="5"
+        />
+        <rect 
+        class="head-panel__rect js-rect-lft" 
+        width="70"
+        height="10"
+        fill="#41b3a3"
+        y="30"
+        rx="5"
+        ry="5"
+        />
+        <rect 
+        class="head-panel__rect js-rect-rght" 
+        width="70"
+        height="10"
+        fill="#41b3a3"
+        y="50"
+        rx="5"
+        ry="5"
+        />
+      </svg>
+    </div>
+    <nav class="head-panel__navigation js-nav">
+      <ul class="head-panel__list">
+        <li class="head-panel__item">
+          <a href="#gendalf-white" class="head-panel__link">
+            you
+          </a>
+        </li>
+        <li class="head-panel__item">
+          <a href="#gendalf-white" class="head-panel__link">
+            sall
+          </a>
+        </li>
+        <li class="head-panel__item">
+          <a href="#gendalf-white" class="head-panel__link">
+            not
+          </a>
+        </li>
+        <li class="head-panel__item">
+          <a href="#gendalf-white" class="head-panel__link">
+            pass!
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="common">
+    <p id="greeting" class="common__greeting js-greeting">
+      hi, jack! how are you doing?
+    </p>
+    <div class="container-slider js-container-slider">
+      <img class="container-slider__slide js-slide js-display-none" src="img/Trier-1.jpg" alt="Jack smiling">
+      <img class="container-slider__slide js-slide js-display-none" src="img/Trier-2.jpg" alt="Jack is confused">
+      <img class="container-slider__slide js-slide" src="img/Trier-3.jpg" alt="Jack hurts">
+      <div class="container-slider__control-panel">
+        <div class="container-slider__arrow js-arrow-right">
+          &#10094;
+        </div>
+        <div class="container-slider__btn-container">
+          <span class="container-slider__btn js-btn js-btn-0"></span>
+          <span class="container-slider__btn js-btn js-btn-1"></span>
+          <span class="container-slider__btn container-slider__btn--mrgrght-0 js-btn js-btn-2"></span>
+        </div>
+        <div class="container-slider__arrow js-arrow-left">
+          &#10095;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="common">
+    <button class="common__btn js-btn-modal" type="button">
+      open an answer the great question of life, the universe and everything
+    </button>
+  </div>
+  <div class="modal js-modal">
+    <div class="modal__overlay js-overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close js-btn-close-modal">
+        &#10005;
+      </button>
+      <h2 class="modal__answer">
+        42
+      </h2>
+    </div>
+  </div>
+
+  <div class="tabs js-tab">
+    <div class="tabs__container">
+      <a href="#" class="tabs__mark js-marks js-mark-on">
+        #1 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #2 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #3 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #4 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #5 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #6 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #7 rule
+      </a>
+      <a href="#" class="tabs__mark js-marks">
+        #8 rule
+      </a>
+    </div>
+    <div class="tabs__content js-contents">
+      <h3 class="tabs__headline">
+        the first rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...you do not talk about Fight Club!
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the second rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...you 
+        <span class="tabs__rule tabs__rule--strong">
+          do not
+        </span>
+        talk about Fight Club!
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the third rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...if someone yells “stop!”, goes limp, or taps out, the fight is over
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the fourth rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...only two guys to a fight.
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the fifth rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...one fight at a time, fellas.
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the sixth rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...the fights are bare knuckle. No shirt, no shoes, no weapons.
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the seventh rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...fights will go on as long as they have to.
+      </p>
+    </div>
+    <div class="tabs__content js-contents js-display-none">
+      <h3 class="tabs__headline">
+        the eighth rule of fight club is...
+      </h3>
+      <p class="tabs__rule">
+        ...if this is your first time at Fight Club, you have to fight!
+      </p>
+    </div>
+  </div>
+  <div class="common">
+    <div class="common__img-box">
+      <img id="gendalf-white" class="common__image js-img" src="img/Gandalf.png" alt="Gandalf White">
+    </div>
+    <a class="common__anchor js-anchor" href="#greeting">
+      return to jack
+    </a>
+  </div>
+
+  <script src="js/task1.js"></script>
+  <script src="js/task2.js"></script>
+  <script src="js/task3.js"></script>
+  <script src="js/task4.js"></script>
+  <script src="js/task5.js"></script>
+</body>
+</html>

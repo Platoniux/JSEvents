@@ -1,0 +1,42 @@
+.js-display-none {
+  display: none;
+}
+
+.js-display-block {
+  display: block;
+}
+
+// for SVG
+.js-rect--left {
+  transform-origin: 70%;
+  transform: rotate(-45deg);
+  y: 25;
+  transition: all 0.5s;
+}
+
+.js-rect--right {
+  transform-origin: 30%;
+  transform: rotate(45deg);
+  y: 25;
+  transition: all 0.5s;
+}
+
+// Navigation menu
+
+.js-show-nav {
+  transition: all 0.5s;
+  transform: translateX(0);
+}
+
+// Modal window
+.js-visibility-visible {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+// for mark of TABS
+
+.js-mark-on {
+  background-color: $color-menu-font;
+  color: $common-font-color;
+}

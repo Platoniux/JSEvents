@@ -1,0 +1,54 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  // border: 7px solid $color-menu-font;
+  border-top: 0;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__mark {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: $normal-font;
+    border: 2px solid $color-menu-font;
+    background-color: $common-font-color;
+    color: $color-menu-font;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-menu-font;
+      color: $common-font-color;
+    }
+  }
+
+  &__content {
+    padding: 30px;
+    border:7px solid $color-menu-font;
+    background-color: $common-font-color;
+    color: $color-menu-font;
+  }
+
+  &__headline {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: $normal-font;
+  }
+
+  &__rule {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: $small-font;
+
+    &--strong {
+      font-weight: 900;
+    }
+  }
+}

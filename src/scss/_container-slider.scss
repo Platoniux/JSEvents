@@ -1,0 +1,58 @@
+.container-slider {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 710px;
+  height: 320px;
+
+  &__slide {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+  }
+
+  &__control-panel {
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__arrow {
+    cursor: pointer;
+    user-select: none;
+    color: $secondary-color;
+    font-size: $big-font;
+
+    &:hover {
+      color: $secondary-color-hover;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+  }
+
+  &__btn {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background-color: $secondary-color-hover;
+    }
+
+    &--mrgrght-0 {
+      margin-right: 0;
+    }
+  }
+}

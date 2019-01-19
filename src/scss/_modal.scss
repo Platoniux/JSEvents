@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  visibility: hidden;
+  transition-delay: 0s;
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__box {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid $color-menu-font;
+    color: $color-menu-font;
+    background-color: $common-font-color;
+    transform: translate(-50%, -50%);
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    font-size: $normal-font;
+    font-weight: 900;
+    border: 0;
+    color: $color-menu-font;
+    background-color: $common-font-color;
+    cursor: pointer;
+  }
+
+  &__answer {
+    margin: auto;
+    text-align: center;
+    font-size: $big-font;
+  }
+}
