@@ -1,5 +1,5 @@
 ;(function() {
-  'use strict'
+  'use strict';
   const navigation = document.querySelector('.js-nav');
   const acnhor = document.querySelector('.js-anchor');
   const svgContainer = document.querySelector('.js-svg');

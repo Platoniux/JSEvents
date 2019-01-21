@@ -1,11 +1,9 @@
 ;(function(){
-  'use strict'
+  'use strict';
   let currentSlide = 0;
   const rightArrow = document.querySelector('.js-arrow-right');
   const leftArrow = document.querySelector('.js-arrow-left');
-  const firstBtn = document.querySelector('.js-btn-0');
-  const secondBtn = document.querySelector('.js-btn-1');
-  const thirdBtn = document.querySelector('.js-btn-2');
+  const buttons = document.querySelectorAll('.js-btn');
 
   showSlide(currentSlide);
 
@@ -15,15 +13,8 @@
   leftArrow.addEventListener('click', function() {
     nextPreviousSlide(1);
   });
-  firstBtn.addEventListener('click', function() {
-    switchSlideOn(0);
-  });
-  secondBtn.addEventListener('click', function() {
-    switchSlideOn(1);
-  });
-  thirdBtn.addEventListener('click', function() {
-    switchSlideOn(2);
-  });
+
+  addEventListenerInBtns(buttons, switchSlideOn);
 
   function switchSlideOn(x) {
     showSlide(currentSlide = x);
@@ -57,4 +48,11 @@
     buttons[currentSlide].style.backgroundColor = '#e27d60';
   }
 
-}())
+  function addEventListenerInBtns(listOfBtns, func) {
+    [].forEach.call(listOfBtns, (item, i) => {
+      item.addEventListener('click', function() {
+        func(i);
+      });
+    });
+  }
+}());

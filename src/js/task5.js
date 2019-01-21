@@ -1,5 +1,5 @@
 ;(function() {
-  'use strict'
+  'use strict';
   const blockOfTabs = document.querySelector('.js-tab');
   const allMarks = document.getElementsByClassName('js-marks');
   const allRules = document.getElementsByClassName('js-contents');

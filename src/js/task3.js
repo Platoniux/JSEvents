@@ -1,7 +1,7 @@
 ;(function() {
-  'use strict'
+  'use strict';
   const svgContainer = document.querySelector('.js-svg');
-  const pairSvgRectangles = document.getElementsByClassName('js-rect-lft');
+  const pairSvgRectangles = document.querySelectorAll('.js-rect-lft');
   const oneSvgRectangle = document.querySelector('.js-rect-rght');
   const navigation = document.querySelector('.js-nav');
 
